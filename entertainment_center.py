@@ -1,6 +1,7 @@
-import media, the_reel, random
+import media
+import the_reel
 
-#Create Movie objects
+# Create Movie objects
 bottle_rocket = media.Movie("tt0115734",
                             "https://www.youtube.com/watch?v=hspUSez-rYY")
 full_metal_jacket = media.Movie("tt0093058",
@@ -21,17 +22,17 @@ bio_dome = media.Movie("tt0115683",
                        "https://www.youtube.com/watch?v=4EWikCCfHJw")
 the_matrix = media.Movie("tt0133093",
                          "https://www.youtube.com/watch?v=a94b1yZOBes")
-the_boondock_saints = media.Movie("tt0144117",
-                                  "https://www.youtube.com/watch?v=vVdxMxr1UJQ")
+boondock_saints = media.Movie("tt0144117",
+                              "https://www.youtube.com/watch?v=vVdxMxr1UJQ")
 jaws = media.Movie("tt0073195",
                    "https://www.youtube.com/watch?v=3hIvvho2T1k")
 
-#Create a list of objects
+# Create a list of objects
 movies = [
     bottle_rocket, full_metal_jacket, death_proof, tremors,
     alien, children_of_men, mud, big_fish,
-    bio_dome, the_matrix, the_boondock_saints, jaws
+    bio_dome, the_matrix, boondock_saints, jaws
     ]
 
-#Send list of objects to the 
+# Send list of objects to the
 the_reel.open_movies_page(movies)
